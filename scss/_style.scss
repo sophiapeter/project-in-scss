@@ -1,0 +1,283 @@
+body{@include mystart;}
+     header {
+        background-color: black;
+         img {
+           @include mylogo;}
+        }
+        nav{ width: 100%;
+                height: 15%;
+                background:black;
+                border-top: 1px solid rgba(255, 255, 255, 0.562);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.562);
+                position: sticky;
+                top: 0;
+                z-index: 1;
+        ul {display: flex;
+                    justify-content: center;
+                    margin: 0;
+                    padding: 0 100px;  }
+                 a {
+                        display: block;
+                        color: #fff;
+                        font-weight: bold;
+                        padding: 20px;
+                        margin-bottom: 5px;}
+                 a:hover {
+                        @include myhover;}}
+
+.sec1
+ {  width: 100%;
+    height: 100vh;
+  background-image: url(../images/main\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .card
+  {
+      width: 575px;
+      height: 220px;
+      color: white;
+      margin-left: 70px;
+      letter-spacing: 1px;
+      padding-top: 200px;
+  }.card h1
+{
+    @include myh;
+    margin: 20px 0 20px 0;  
+}.card p{
+    margin-bottom:20px ;  
+}.btn
+{
+    background-color: $main-color;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+}.btn:hover{
+    background-color: rgba(56, 23, 23, 0.836);
+    cursor: pointer;}
+}
+.burger-icon {
+    display: none;}
+.wrapper{
+    @include goflex;
+    margin:100px 70px 70px 70px;
+    .card1{max-width:30%;
+        max-height: 25%;
+        margin-top: 70px;
+        margin-right: 150px;
+        .card2{ 
+            max-width:35%;
+            max-height: 30%;
+            margin-right: 200px;
+        }
+    }
+}
+.card1 h1
+{
+   @include myh;
+    margin-bottom: 20px;
+}
+.card1 p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: $card-color;
+}
+.b
+{
+    background-color:$main-color;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+.b:hover {
+    cursor: pointer;
+    box-shadow: -1px 37px 17px -17px rgba(255,0,0,0.56);
+    -webkit-box-shadow: -1px 37px 17px -17px rgba(255,0,0,0.56);
+    -moz-box-shadow: -1px 37px 17px -17px rgba(255,0,0,0.56);
+}
+.sec3{
+    .box-wrapper{text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: 15px;
+        h1{@include myh;}
+            p{
+                margin-top: 20px;
+                font-size: 14px;
+                font-weight: bold;
+                color: $card-color ;
+            }  
+     .all-menu {@include mymenu;
+        ul {
+        @include goflex;
+     li {
+        margin-top: 30px;  
+    
+     a {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;}
+   
+      a:hover{
+        color: $main-color;
+        cursor: pointer;}
+    
+     a.active
+    {color:$main-color}
+    }}} 
+   }
+   .boxeswrapper{ display: flex;
+        justify-content: space-evenly;   
+        align-items: center;
+        flex-wrap: wrap; 
+        .boxes{max-width: 420px;
+            max-height: 100px;
+            margin: 20px;
+            border-radius: 2%;
+            background-color: #fff;  
+        .one{ display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;  
+            h2{
+                font-size: 22px;
+                margin: 10px;
+            }
+            p{
+                color: $main-color;
+                font-size: 18px;
+            }
+        }
+    }
+        .boxes:hover {
+        cursor: pointer;
+         background-image: url(../images/delicious-chocolate-assortment-dark-cloth-close-up.jpg);
+        color: #fff;
+    }
+    .boxeswrapper .text:hover{
+        color: #fff;
+    }
+    .text {
+    font-size: 16px;
+    margin: 10px;
+}
+   }
+}
+.sec4{
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../images/main2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .tb{ @include goflex;
+        .againcard
+        {
+            width: 500px;
+            height: 300px;
+            color: aliceblue;
+            margin-left:150px;
+            letter-spacing: 1px;
+            margin-top: 50px;
+            padding: 50px;
+            h1{
+                @include myh;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .inputs{@include doinput;
+        input{@include i-s;}
+            select{@include i-s;}
+                button{
+                    background-color:$main-color;
+                    color: white;
+                    width: 160px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 5px;
+                }
+        button:hover {
+            cursor: pointer;
+            box-shadow: -1px 37px 17px -17px rgba(255,0,0,0.56);
+            -webkit-box-shadow: -1px 37px 17px -17px rgba(255,0,0,0.56);
+            -moz-box-shadow: -1px 37px 17px -17px rgba(255,0,0,0.56);
+           } 
+    }
+}
+.sec5{
+    .box-wrapper{text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: 15px;
+        h1{@include myh;}
+            p{
+                margin-top: 20px;
+                font-size: 14px;
+                font-weight: bold;
+                color: $card-color ;
+            }  
+     .all-menu {@include mymenu;
+        ul {
+        @include goflex;
+     li {
+        margin-top: 30px;  
+    
+     a {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: black;}
+   
+      a:hover{
+        color: $main-color;
+        cursor: pointer;}
+    
+     a.active
+    {color:$main-color}
+    }}}}
+.gallery{margin-top:20px;
+    margin-left: 50px;
+    width: 100%;
+    height: 100%;
+    column-count:3;
+    .imageswrapper{
+        width: 270px;
+        height: 270px;
+        .p1{background-image: url(../images/broken-chocolate-pieces-cocoa-powder-dark-surface_179068-1863.jpg);
+            @include background;
+        }
+        .p2{
+            background-image: url(../images/brown-homemade-easter-chocolate-eggs-bowl_53876-131894.jpg);
+            @include background;
+        }
+        .p3{
+            background-image: url(../images/chocolate-cocoa-powder-composition-cocoa-powder-grated-bean-cocoa-bars-pieces-different-milk-dark-chocolate-black-background-baking-chocolate-texture-top-view-mock-up_253362-16001.jpg);
+            @include background;
+        }
+        .p4{
+            background-image: url(../images/delicious-chocolate-assortment-dark-cloth-close-up.jpg);
+            @include background;
+        }
+        .p5{
+            background-image: url(../images/pexels-photo-2067420.jpeg);
+            @include background;
+        }
+        .p6{
+            background-image: url(../images/sweet-chocolate-arrangement-dark-board-close-up.jpg);
+            @include background;
+        }
+    }
+}
+.gallery:hover
+   {
+    background-color:  rgba(62, 62, 62, 0.062);
+    transform: scale(1.03);
+    cursor: pointer;
+    rotate: 90%;
+    transition: all 1s ease-in-out;}
+}
+
+
+
+

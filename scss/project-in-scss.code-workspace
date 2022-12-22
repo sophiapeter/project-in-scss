@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../scss-file"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project-in-scss"
+	}
+}

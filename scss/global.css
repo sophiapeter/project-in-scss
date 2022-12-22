@@ -1,0 +1,456 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.089);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: black;
+}
+header img {
+  max-width: 60px;
+  max-height: 60px;
+  margin: 10px;
+}
+
+nav {
+  width: 100%;
+  height: 15%;
+  background: black;
+  border-top: 1px solid rgba(255, 255, 255, 0.562);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.562);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 100px;
+}
+nav a {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+nav a:hover {
+  color: #f42f2c;
+  transform: scale(1.2);
+}
+
+.sec1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/main\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sec1 .card {
+  width: 575px;
+  height: 220px;
+  color: white;
+  margin-left: 70px;
+  letter-spacing: 1px;
+  padding-top: 200px;
+}
+.sec1 .card h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+}
+.sec1 .card p {
+  margin-bottom: 20px;
+}
+.sec1 .btn {
+  background-color: #f42f2c;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border: none;
+}
+.sec1 .btn:hover {
+  background-color: rgba(56, 23, 23, 0.836);
+  cursor: pointer;
+}
+
+.burger-icon {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  margin: 100px 70px 70px 70px;
+}
+.wrapper .card1 {
+  max-width: 30%;
+  max-height: 25%;
+  margin-top: 70px;
+  margin-right: 150px;
+}
+.wrapper .card1 .card2 {
+  max-width: 35%;
+  max-height: 30%;
+  margin-right: 200px;
+}
+
+.card1 h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card1 p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: rgba(56, 55, 55, 0.603);
+}
+
+.b {
+  background-color: #f42f2c;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border: none;
+}
+
+.b:hover {
+  cursor: pointer;
+  box-shadow: -1px 37px 17px -17px rgba(255, 0, 0, 0.56);
+  -webkit-box-shadow: -1px 37px 17px -17px rgba(255, 0, 0, 0.56);
+  -moz-box-shadow: -1px 37px 17px -17px rgba(255, 0, 0, 0.56);
+}
+
+.sec3 .box-wrapper {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+.sec3 .box-wrapper h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.sec3 .box-wrapper p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(56, 55, 55, 0.603);
+}
+.sec3 .box-wrapper .all-menu {
+  max-width: 100%;
+  height: 80px;
+  margin-right: 78px;
+  margin-left: 78px;
+  margin-top: 50px;
+  box-shadow: 1px 3px 13px -3px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 1px 3px 13px -3px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 1px 3px 13px -3px rgba(0, 0, 0, 0.71);
+}
+.sec3 .box-wrapper .all-menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+.sec3 .box-wrapper .all-menu ul li {
+  margin-top: 30px;
+}
+.sec3 .box-wrapper .all-menu ul li a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+.sec3 .box-wrapper .all-menu ul li a:hover {
+  color: #f42f2c;
+  cursor: pointer;
+}
+.sec3 .box-wrapper .all-menu ul li a.active {
+  color: #f42f2c;
+}
+.sec3 .boxeswrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sec3 .boxeswrapper .boxes {
+  max-width: 420px;
+  max-height: 100px;
+  margin: 20px;
+  border-radius: 2%;
+  background-color: #fff;
+}
+.sec3 .boxeswrapper .boxes .one {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.sec3 .boxeswrapper .boxes .one h2 {
+  font-size: 22px;
+  margin: 10px;
+}
+.sec3 .boxeswrapper .boxes .one p {
+  color: #f42f2c;
+  font-size: 18px;
+}
+.sec3 .boxeswrapper .boxes:hover {
+  cursor: pointer;
+  background-image: url(../images/delicious-chocolate-assortment-dark-cloth-close-up.jpg);
+  color: #fff;
+}
+.sec3 .boxeswrapper .boxeswrapper .text:hover {
+  color: #fff;
+}
+.sec3 .boxeswrapper .text {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.sec4 {
+  width: 100%;
+  height: 650px;
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/main2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sec4 .tb {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+.sec4 .tb .againcard {
+  width: 500px;
+  height: 300px;
+  color: aliceblue;
+  margin-left: 150px;
+  letter-spacing: 1px;
+  margin-top: 50px;
+  padding: 50px;
+}
+.sec4 .tb .againcard h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.sec4 .inputs {
+  width: 450px;
+  height: 500px;
+  margin-top: 70px;
+  margin-right: 150px;
+  border-radius: 10px;
+  color: aliceblue;
+  background-color: white;
+  gap: 20px;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1001;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.411);
+}
+.sec4 .inputs input {
+  width: 350px;
+  height: 50px;
+  border: 1 px solid rgba(238, 237, 237, 0.144);
+  border-radius: 5px;
+  border: none;
+}
+.sec4 .inputs select {
+  width: 350px;
+  height: 50px;
+  border: 1 px solid rgba(238, 237, 237, 0.144);
+  border-radius: 5px;
+  border: none;
+}
+.sec4 .inputs button {
+  background-color: #f42f2c;
+  color: white;
+  width: 160px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+.sec4 .inputs button:hover {
+  cursor: pointer;
+  box-shadow: -1px 37px 17px -17px rgba(255, 0, 0, 0.56);
+  -webkit-box-shadow: -1px 37px 17px -17px rgba(255, 0, 0, 0.56);
+  -moz-box-shadow: -1px 37px 17px -17px rgba(255, 0, 0, 0.56);
+}
+
+.sec5 .box-wrapper {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+.sec5 .box-wrapper h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.sec5 .box-wrapper p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(56, 55, 55, 0.603);
+}
+.sec5 .box-wrapper .all-menu {
+  max-width: 100%;
+  height: 80px;
+  margin-right: 78px;
+  margin-left: 78px;
+  margin-top: 50px;
+  box-shadow: 1px 3px 13px -3px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 1px 3px 13px -3px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 1px 3px 13px -3px rgba(0, 0, 0, 0.71);
+}
+.sec5 .box-wrapper .all-menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+}
+.sec5 .box-wrapper .all-menu ul li {
+  margin-top: 30px;
+}
+.sec5 .box-wrapper .all-menu ul li a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+.sec5 .box-wrapper .all-menu ul li a:hover {
+  color: #f42f2c;
+  cursor: pointer;
+}
+.sec5 .box-wrapper .all-menu ul li a.active {
+  color: #f42f2c;
+}
+.sec5 .gallery {
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 100%;
+  height: 100%;
+  column-count: 3;
+}
+.sec5 .gallery .imageswrapper {
+  width: 270px;
+  height: 270px;
+}
+.sec5 .gallery .imageswrapper .p1 {
+  background-image: url(../images/broken-chocolate-pieces-cocoa-powder-dark-surface_179068-1863.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.sec5 .gallery .imageswrapper .p2 {
+  background-image: url(../images/brown-homemade-easter-chocolate-eggs-bowl_53876-131894.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.sec5 .gallery .imageswrapper .p3 {
+  background-image: url(../images/chocolate-cocoa-powder-composition-cocoa-powder-grated-bean-cocoa-bars-pieces-different-milk-dark-chocolate-black-background-baking-chocolate-texture-top-view-mock-up_253362-16001.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.sec5 .gallery .imageswrapper .p4 {
+  background-image: url(../images/delicious-chocolate-assortment-dark-cloth-close-up.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.sec5 .gallery .imageswrapper .p5 {
+  background-image: url(../images/pexels-photo-2067420.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.sec5 .gallery .imageswrapper .p6 {
+  background-image: url(../images/sweet-chocolate-arrangement-dark-board-close-up.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.sec5 .gallery:hover {
+  background-color: rgba(62, 62, 62, 0.062);
+  transform: scale(1.03);
+  cursor: pointer;
+  rotate: 90%;
+  transition: all 1s ease-in-out;
+}/*# sourceMappingURL=global.css.map */
