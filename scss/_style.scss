@@ -164,7 +164,7 @@ body{@include mystart;}
     .text {
     font-size: 16px;
     margin: 10px;
-}
+    }
    }
 }
 .sec4{
@@ -201,7 +201,7 @@ body{@include mystart;}
                     border: none;
                     border-radius: 5px;
                 }
-        button:hover {
+             button:hover {
             cursor: pointer;
             box-shadow: -1px 37px 17px -17px rgba(255,0,0,0.56);
             -webkit-box-shadow: -1px 37px 17px -17px rgba(255,0,0,0.56);
@@ -221,13 +221,13 @@ body{@include mystart;}
                 font-weight: bold;
                 color: $card-color ;
             }  
-     .all-menu {@include mymenu;
+            .all-menu {@include mymenu;
         ul {
         @include goflex;
-     li {
+             li {
         margin-top: 30px;  
     
-     a {
+             a {
         font-weight: bold;
         text-transform: uppercase;
         color: black;}
@@ -244,7 +244,7 @@ body{@include mystart;}
         width: 100%;
         height: 100%;
         column-count:3;
-    .imageswrapper{
+        .imageswrapper{
         width: 270px;
         height: 270px;
         .p1{background-image: url(../images/broken-chocolate-pieces-cocoa-powder-dark-surface_179068-1863.jpg);
@@ -272,7 +272,7 @@ body{@include mystart;}
         }
     }
 }
-.gallery:hover{
+    .gallery:hover{
         background-color:  rgba(62, 62, 62, 0.062);
         transform: scale(1.03);
         cursor: pointer;
