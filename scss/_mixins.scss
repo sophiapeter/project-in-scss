@@ -84,3 +84,16 @@
     background-repeat: no-repeat;
     height: 100%;
 }
+@mixin againhover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+@mixin myfooter {
+    width: 100%;
+    height: 600px ;
+    margin-top: 100px;
+    color: #fff;
+    gap: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
