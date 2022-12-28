@@ -4,7 +4,7 @@ body{@include mystart;}
          img {
            @include mylogo;}
          }
-        nav{ width: 100%;
+            nav{ width: 100%;
                 height: 15%;
                 background:black;
                 border-top: 1px solid rgba(255, 255, 255, 0.562);
@@ -12,17 +12,17 @@ body{@include mystart;}
                 position: sticky;
                 top: 0;
                 z-index: 1;
-             ul  {display: flex;
+                ul  {display: flex;
                     justify-content: center;
                     margin: 0;
                     padding: 0 100px;  }
-                 a {
+                    a {
                         display: block;
                         color: #fff;
                         font-weight: bold;
                         padding: 20px;
                         margin-bottom: 5px;}
-                 a:hover {
+                     a:hover {
                         @include myhover;}
                     }
                     img:hover{
@@ -34,22 +34,23 @@ body{@include mystart;}
   background-image: url(../images/main\ 1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  .card
-  {
+     .card
+     {
       width: 575px;
       height: 220px;
       color: white;
       margin-left: 70px;
       letter-spacing: 1px;
       padding-top: 200px;
-  }.card h1
-{
+    }
+     h1
+    {
     @include myh;
     margin: 20px 0 20px 0;  
-}.card p{
+    } p{
     margin-bottom:20px ;  
-}.btn
-{   background-color: $main-color;
+    }.btn
+    {   background-color: $main-color;
     color: white;
     width: 150px;
     height: 40px;
